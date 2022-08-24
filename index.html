@@ -8,15 +8,45 @@
 </head>
 <body>
     <h1>Hello</h1>
-    <div id="p1">  
-        <button id="c1">Click for Event Bubbling</button>  
-      </div>  
-    <div id="p2">  
-        <button id="c2">Click for Event Capturing</button>  
-      </div>  
-    <script src="eventBubblingAndCapturing.js"></script>
 
-    <button id="demo">Click for Callback Demo</button>  
-    <script src="callback.js"></script>
+<!-- Event Bubbling and Even Capturing -->
+
+      <style>
+        div{
+            width: fit-content;
+            padding: 30px;
+            align-items: center;
+            border: 1px solid black;
+        }
+      </style>
+      <h4>Event Bubbling - </h4>
+      <div class="grandparent1">Click for GrandParent
+        <div class="parent1">Click for Parent
+            <div class="child1">Click for Child</div>
+        </div>
+      </div>
+
+      <h4>Event Capturing - </h4>
+      <div class="grandparent2">Click for GrandParent
+        <div class="parent2">Click for Parent
+            <div class="child2">Click for Child</div>
+        </div>
+      </div>
+      <script src="eventBubblingAndCapturing.js"></script><br>
+
+<!-- Callback Function -->
+
+    <button class="callback-demo">Click for Callback Demo</button>  
+    <script src="callback.js"></script><br><br>
+
+<!-- Splice Method -->
+
+    <button class="splice-demo">Click for Splice Demo</button>  
+    <script src="splice.js"></script><br><br>
+
+<!-- Slice Method -->
+
+    <button class="slice-demo">Click for Slice Demo</button>  
+    <script src="slice.js"></script>
 </body>
 </html>

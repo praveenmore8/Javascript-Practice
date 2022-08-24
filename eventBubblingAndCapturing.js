@@ -1,21 +1,33 @@
 
+// For Event Bubbling
+document.querySelector('.grandparent1')
+.addEventListener('click',()=>{
+  console.log("Grandparent Div");
+});
 
-var parent = document.querySelector('#p1');  
-parent.addEventListener('click', function(){  
-  console.log("Parent function in bubbling");  
-});  
+document.querySelector(".parent1")
+.addEventListener('click',()=>{
+  console.log("Parent Div");
+});
 
-var child = document.querySelector('#c1');  
-child.addEventListener('click', function(){  
-  console.log("Child function in bubbling");  
-});  
+document.querySelector(".child1")
+.addEventListener('click',()=>{
+  console.log("Child Div");
+});
 
-    var parent = document.querySelector('#p2');  
-    var child = document.querySelector('#c2');  
-  
-    parent.addEventListener('click', function(){  
-      console.log("Parent Function in capturing");  
-    },true);  
-    child.addEventListener('click', function(){ 
-      console.log("Child Function in capturing");  
-    });  
+// For Event Capturing
+
+document.querySelector('.grandparent2')
+.addEventListener('click',()=>{
+  console.log("Grandparent Div");
+},true);
+
+document.querySelector(".parent2")
+.addEventListener('click',()=>{
+  console.log("Parent Div");
+},true);
+
+document.querySelector(".child2")
+.addEventListener('click',()=>{
+  console.log("Child Div");
+},true);

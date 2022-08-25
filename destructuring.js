@@ -18,10 +18,10 @@ dest1.addEventListener('click', xyz);
 
    console.log("Object Destructuring-->");
    const car = {
-    model : "Q3",
+    model : "Mustang",
     price : 5000000,
     average : 20,
-    color : "red",
+    color : "Yellow",
     start : function(){ console.log('started'); }
    }
    const {model, price, average, color } = car;

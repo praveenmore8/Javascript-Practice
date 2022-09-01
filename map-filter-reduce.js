@@ -22,18 +22,18 @@ function f1(){
     const num2 = [1, 2, 3, 4];
     console.log("Array Before - ");
     console.log(num2);
-const evens = num2.filter(item => item % 2 === 0);
-console.log("Array After - ");
-console.log(evens); // [2, 4]
+    const evens = num2.filter(item => item % 2 === 0);
+    console.log("Array After - ");
+    console.log(evens); // [2, 4]
 }
 
 function r1(){
     const num3 = [1, 2, 3, 4];
     console.log("Array Before - ");
     console.log(num3);
-const sum = num3.reduce(function (result, item) {
-  return result + item;
+    const sum = num3.reduce(function (result, item) {
+     return result + item;
 }, 0);
-console.log("Array After - ");
-console.log(sum); // 10
+    console.log("Array After - ");
+    console.log(sum); // 10
 }
